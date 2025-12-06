@@ -73,6 +73,7 @@ void MenuAdmin (admin& adm, std::vector<Roti>& daftarRoti){
             case 7:
                 {
                     std::string usernameToDelete;
+                    adm.lihatMember(adm.daftarMember);
                     std::cout << "Masukkan username member yang ingin dihapus: ";
                     std::getline(std::cin, usernameToDelete);
                     adm.hapusMember(usernameToDelete);
@@ -281,3 +282,4 @@ int main() {
         }
     }while (pilihan != 0);
 }
+
